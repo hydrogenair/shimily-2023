@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">shmily</string>
+    <string name="service">由木犀团队提供服务</string>
+    <string name="name">昵称</string>
+    <string name="statue">头像</string>
+    <string name="gender">性别</string>
+    <string name="email">邮箱账号</string>
+    <string name="birthday">生日</string>
+    <string name="motto">个性签名</string>
+    <string name="email_in">  输入邮箱账号</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

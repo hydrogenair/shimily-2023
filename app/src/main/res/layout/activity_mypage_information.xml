@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintHeight_percent="0.6"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+
+        app:layout_constraintBottom_toTopOf="@id/service"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+
+        android:orientation="vertical"
+        android:background="@drawable/square_angle_g">
+
+        <LinearLayout
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/square_line_tb_g">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/statue"
+                android:textSize="22sp"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+            <!--改,控制宽高比相等 用代码-->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/circle"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/square_line_b_g"
+            android:textColor="@color/black">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/name"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="id"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:gravity="right|center_vertical"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/square_line_b_g">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/gender"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="女"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/square_line_b_g">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/email"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="email"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:gravity="right|center_vertical"/>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:background="@drawable/square_line_b_g">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/birthday"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="date"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:gravity="right|center_vertical"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/text6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="@string/motto"
+                android:textSize="22sp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"/>
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="motto"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="22sp"
+                android:gravity="right|center_vertical"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:background="@drawable/square_redius_black_line"
+
+        android:text="保存资料"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/service"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintWidth_percent="0.6" />
+
+
+
+
+    <TextView
+        android:id="@+id/service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/service"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/memory_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/nav_memory"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toStartOf="@id/map_button"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.93" />
+
+    <ImageButton
+        android:id="@+id/map_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintDimensionRatio="1"
+
+
+        app:layout_constraintStart_toEndOf="@id/memory_button"
+        app:layout_constraintEnd_toStartOf="@id/user_button"
+        android:background="@drawable/nav_map"/>
+
+    <ImageButton
+        android:id="@+id/user_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/nav_user"
+
+        app:layout_constraintVertical_bias="0.93"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.05"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/map_button"/>
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="记忆"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/memory_button"
+        app:layout_constraintStart_toStartOf="@id/memory_button"
+        app:layout_constraintTop_toBottomOf="@id/memory_button"
+        android:textColor="@drawable/nav_text"/>
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="定位"
+        android:textSize="16sp"
+        android:textColor="@drawable/nav_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/map_button"
+        app:layout_constraintStart_toStartOf="@+id/map_button"
+        app:layout_constraintTop_toBottomOf="@id/map_button" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"
+        android:textSize="16sp"
+        android:textColor="@drawable/nav_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/user_button"
+        app:layout_constraintStart_toStartOf="@id/user_button"
+        app:layout_constraintTop_toBottomOf="@id/user_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
